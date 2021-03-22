@@ -1,0 +1,20 @@
+<tui-root>
+
+  <form class="b-form" [formGroup]="testForm">
+    <tui-input-number formControlName="testValue" tuiTextfieldSize="s" postfix="kg">
+      Potatos
+    </tui-input-number>
+    <tui-input-number class="tui-space_top-2" formControlName="testValue" postfix="L" tuiTextfieldSize="m"
+      [tuiTextfieldLabelOutside]="true">
+      Milk
+    </tui-input-number>
+    <tui-input-number class="tui-space_top-2" postfix="cm" formControlName="testValue">
+      Carrot
+    </tui-input-number>
+  </form>
+
+  <div>
+    <pre> {{this.testForm.value | json }} </pre>
+  </div>
+
+</tui-root>

@@ -1,8 +1,11 @@
 <tui-root>
 
   <form class="b-form" [formGroup]="testForm">
-    <tui-input-number formControlName="testValue" tuiTextfieldSize="s" postfix="kg">
-      Potatos
+     Potatos
+    <tui-input-number formControlName="testValue"
+    [tuiTextfieldLabelOutside]="true"
+    tuiTextfieldSize="s" postfix="kg">
+     1
     </tui-input-number>
     <tui-input-number class="tui-space_top-2" formControlName="testValue" postfix="L" tuiTextfieldSize="m"
       [tuiTextfieldLabelOutside]="true">

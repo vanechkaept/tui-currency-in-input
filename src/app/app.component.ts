@@ -9,6 +9,6 @@ import {FormControl, FormGroup} from '@angular/forms';
 })
 export class AppComponent {
     readonly testForm = new FormGroup({
-        testValue: new FormControl(1300.01),
+        testValue: new FormControl(),
     });
 }
